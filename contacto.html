@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto | Mita Mirthala</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="imagenes/logo.png.png" alt="Logo Mita Mirthala">
+                <span>Mita Mirthala Coffee</span>
+            </a>
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="contacto.html" class="btn-futuro">Planes a Futuro</a></li>
+        </ul>
+    </nav>
+
+    <section class="contacto">
+        <div class="contacto-contenido">
+
+            <!-- LADO IZQUIERDO -->
+            <div class="cafe-container">
+
+                <img src="imagenes/cafecito.png" alt="Café Mita Mirthala" class="cafe-img">
+                <p class="mensaje-cafe">Disfruta del aroma y sabor de nuestro café</p>
+            </div>
+
+            <!-- LADO DERECHO -->
+
+            <!-- LADO DERECHO -->
+            <div class="info-contacto">
+                <img src="imagenes/local4.jpeg" alt="Nuestra Empresa" class="empresa-img">
+            </div>
+
+        </div>
+        <div class="contacto-mapa-info">
+
+            <!-- MAPA -->
+            <div class="contacto-mapa-info">
+
+                <!-- MAPA -->
+                <div class="mapa-contacto">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4433.750670859721!2d-86.27087066663312!3d12.11699270043348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDA2JzU5LjYiTiA4NsKwMTYnMTMuNiJX!5e1!3m2!1ses-419!2sni!4v1767758727052!5m2!1ses-419!2sni"
+                        allowfullscreen loading="lazy">
+                    </iframe>
+                </div>
+
+                <!-- TEXTO -->
+                <div class="texto-contacto">
+                    <h3>📌 Nuestra ubicación</h3>
+                    <p>
+                        Nos encontramos en Managua, Nicaragua, costado norte del Registro de la
+                        Propiedad Pública, 1 cuadra al lago, frente a la Escuela de Taekwondo Impacto.
+                    </p>
+
+                    <p>
+                        Visítanos y disfruta de un ambiente acogedor, buen café y productos
+                        seleccionados especialmente para ti.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto-horario">
+        <div class="contenido-seccion">
+            <h2>🕒 Horario de atención</h2>
+            <div class="horario-grid">
+                <div class="horario-card">
+                    <span>Lunes - Viernes</span>
+                    <strong>8:00 a.m. – 5:30 p.m.</strong>
+                </div>
+                <div class="horario-card">
+                    <span>Sábados</span>
+                    <strong>8:00 a.m. – 2:30 p.m.</strong>
+                </div>
+                <div class="horario-card">
+                    <span>Domingos</span>
+                    <strong>Cerrado</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto-formulario">
+        <div class="contenido-seccion">
+            <h2>✉️ Contáctanos</h2>
+            <form action="https://formspree.io/forms" method="post">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo" required>
+                <textarea name="mensaje" placeholder="Escribe tu mensaje..." rows="5" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Mita Mirthala Coffee
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

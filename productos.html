@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Productos | Mita Mirthala Coffee</title>
+    <!-- Fuente y CSS compartido -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="imagenes/logo.png.png" alt="Logo Mita Mirthala">
+                <span>Mita Mirthala Coffee</span>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="contacto.html" class="btn-futuro">Planes a Futuro</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENEDOR PRINCIPAL PRODUCTOS -->
+    <div class="productos-contenedor">
+
+        <!-- PANEL IZQUIERDO -->
+        <aside class="panel-lateral">
+            <div class="buscador-compras">
+                <input type="text" id="buscador" placeholder="🔍 Buscar producto...">
+                <button id="verCompras">Ver Compras 🛒</button>
+            </div>
+        </aside>
+
+        <!-- SECCIÓN PRODUCTOS -->
+        <main class="productos-main">
+
+            <section class="categoria-productos">
+                <h3 class="titulo-categoria">☕ Cafeteras</h3>
+                <div class="productos-grid">
+                    <!-- Producto -->
+                    <div class="producto" data-nombre="Cafetera vidrio 400ml" data-precio="550">
+                        <img src="imagenes/vidriode400ml.jpg">
+                        <h4>Olla Vidrio 40ml</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 550</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Cafetera Vidrio 800ml" data-precio="800">
+                        <img src="imagenes/vidrio800ml.jpg">
+                        <h4>Olla Vidrio 800ml</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 800</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Cafetera olla Aluminio" data-precio="305">
+                        <img src="imagenes/ollaaluminio3tazas.jpg">
+                        <h4>Cafetera 3 Tazas</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 305</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Cafetera tarro sellado" data-precio="285">
+                        <img src="imagenes/tarrosellado.jpg">
+                        <h4>Tarro Sellado</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 285</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCION CAFÉ TERMINADA-->
+            <section class="categoria-productos">
+                <h3 class="titulo-categoria">🧊 Café</h3>
+                <div class="productos-grid">
+                    <div class="producto" data-nombre="cafe Bolsa" data-precio="260">
+                        <img src="imagenes/bolsosdecafe.jpg">
+                        <h4>Bolsa de Cafe </h4>
+                        <div class="precio-carrito">
+                            <span>C$ 260</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="cafe Preparado" data-precio="35">
+                        <img src="imagenes/cafeservido.png">
+                        <h4>Taza de Cafe</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 35</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Cafetera tarro sellado" data-precio="285">
+                        <img src="imagenes/s2.jpeg">
+                        <h4>Tarro Sellado</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 285</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Cafetera taza koi" data-precio="250">
+                        <img src="imagenes/t2.jpeg">
+                        <h4>Taza KOI</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 250</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCION BOLSOS Y MOCHILAS INICIO-->
+            <section class="categoria-productos">
+                <h3 class="titulo-categoria">🧊 Bolsos & Mochilas</h3>
+                <div class="productos-grid">
+                    <div class="producto" data-nombre="bolso MK Gris" data-precio="1200">
+                        <img src="imagenes/bolsoGrisMk.jpeg">
+                        <h4>Mochila Mk </h4>
+                        <div class="precio-carrito">
+                            <span>C$ 1200</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="bolso MK cafe" data-precio="1200">
+                        <img src="imagenes/bolsomkcafe.jpeg">
+                        <h4>Mochila Mk</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 1200</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="bolso MK blanco" data-precio="1200">
+                        <img src="imagenes/BolsoBlancomk.jpeg">
+                        <h4>Mochila Mk</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 1200</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="bolso PRADA verde" data-precio="1500">
+                        <img src="imagenes/bolsoVerde.jpeg">
+                        <h4>Mochila PRADA</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 1500</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- SECCION CAFÉ 2DA PARTE-->
+            <section class="categoria-productos">
+                <h3 class="titulo-categoria"></h3>
+                <div class="productos-grid">
+                    <div class="producto" data-nombre="bolso PRADA rosa" data-precio="1500">
+                        <img src="imagenes/BolsoRosa.jpeg">
+                        <h4>Mochila PRADA</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 1500</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="bolso PRADA negro" data-precio="1500">
+                        <img src="imagenes/bolsoPradaNegro.jpeg">
+                        <h4>Mochila PRADA</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 150</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="mochila gris" data-precio="830">
+                        <img src="imagenes/MochilaGris.jpeg">
+                        <h4>Mochila Gris</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 830</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="mochila Negra" data-precio="830">
+                        <img src="imagenes/Mochilanegra.jpeg">
+                        <h4>Mochila Negra</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 830</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+            </section>
+            <!-- SECCION BOLSO & MOCHILAS TERMINADA-->
+
+            <!-- SECCION VARIOS INICIO-->
+            <section class="categoria-productos">
+                <h3 class="titulo-categoria">🧊 Varios</h3>
+                <div class="productos-grid">
+                    <div class="producto" data-nombre="Vaso mezclador" data-precio="350">
+                        <img src="imagenes/vasomezclador.jpg">
+                        <h4>Vaso Mezclador</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 350</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Fan de colores" data-precio="350">
+                        <img src="imagenes/fancolores.jpeg">
+                        <h4>Fan Colorido</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 350</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Lampara solar" data-precio="410">
+                        <img src="imagenes/lampara.jpeg">
+                        <h4>Lampara Solar</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 410</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Toma Corriente 5" data-precio="360">
+                        <img src="imagenes/toma5.jpeg">
+                        <h4>Toma Corriente 5</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 360</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="categoria-productos">
+                <h3 class="titulo-categoria"></h3>
+                <div class="productos-grid">
+                    <div class="producto" data-nombre="Altavoz Luces" data-precio="1000">
+                        <img src="imagenes/parlantealtavoz.jpg">
+                        <h4>Altavoz Luces</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 1000</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Soporte Movil negro" data-precio="100">
+                        <img src="imagenes/soporte.jpeg">
+                        <h4>Soporte Movil</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 100</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Soporte Movil amarillo" data-precio="100">
+                        <img src="imagenes/soportemvil2.jpg">
+                        <h4>Soporte Movil</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 100</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Termo Acero blanco" data-precio="250">
+                        <img src="imagenes/termoblanco.jpeg">
+                        <h4>Termo Acero</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 250</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="categoria-productos">
+                <h3 class="titulo-categoria"></h3>
+                <div class="productos-grid">
+                    <div class="producto" data-nombre="Perfume Scenabella" data-precio="170">
+                        <img src="imagenes/perfumeVailant.jpeg">
+                        <h4>Perfume Scenabella</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 170 c/u</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Perfume Hombre" data-precio="80">
+                        <img src="imagenes/perfumeRojo.jpeg">
+                        <h4>Perfume Hombre</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 80</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Toma Corriente 7" data-precio="420">
+                        <img src="imagenes/toma7.jpeg">
+                        <h4>Toma Corriente 7</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 420</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Mini Cesta" data-precio="20">
+                        <img src="imagenes/minicesta.jpeg">
+                        <h4>Mini Cesta</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 20</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="categoria-productos">
+                <h3 class="titulo-categoria"></h3>
+                <div class="productos-grid">
+                    <div class="producto" data-nombre="Fragancia Aromaterapia Herborist" data-precio="350">
+                        <img src="imagenes/herborist.jpg">
+                        <h4>Fragancia Aromaterapia Herborist</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 350</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Fragancia Aromaterapia Home" data-precio="300">
+                        <img src="imagenes/homefragance.jpg">
+                        <h4>Fragancia Aromaterapia Home</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 300</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Abridor de Vino rojo" data-precio="270">
+                        <img src="imagenes/r1.jpeg">
+                        <h4>Abridor de Vino</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 270</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Toma Corriente 4" data-precio="300">
+                        <img src="imagenes/regleta.jpg">
+                        <h4>Toma Corriente 4</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 300</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="categoria-productos">
+                <h3 class="titulo-categoria"></h3>
+                <div class="productos-grid">
+                    <div class="producto" data-nombre="Taza de Comida" data-precio="300">
+                        <img src="imagenes/TAZACOMIDA.jpeg">
+                        <h4>Taza de Comida</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 300</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Auricules bluetooth" data-precio="350">
+                        <img src="imagenes/auri2.jpeg">
+                        <h4>Auricules bluetooth</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 350</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Cargadores Tipo C" data-precio="150">
+                        <img src="imagenes/CARGADORES.jpeg">
+                        <h4>Cargadores Tipo C</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 150</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Calculadora" data-precio="300">
+                        <img src="imagenes/calculadora.jpg">
+                        <h4>Calculadora</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 300</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="categoria-productos">
+                <h3 class="titulo-categoria"></h3>
+                <div class="productos-grid">
+                    <div class="producto" data-nombre="Cadenita Estrellita" data-precio="250">
+                        <img src="imagenes/cadenitaestrellita.jpg">
+                        <h4>Cadenita Estrellita</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 250</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Cadena Tiffany" data-precio="450">
+                        <img src="imagenes/cadenatiffany.jpg">
+                        <h4>Cadena Tiffany</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 450</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Pulsera Chanell" data-precio="350">
+                        <img src="imagenes/pulseraChaneldorada.jpg">
+                        <h4>Pulsera Chanell</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 350</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Pulsera Tiffany" data-precio="350">
+                        <img src="imagenes/pulseratiffanydorada.jpg">
+                        <h4>Pulsera Tiffany</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 350</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="categoria-productos">
+                <h3 class="titulo-categoria"></h3>
+                <div class="productos-grid">
+                    <div class="producto" data-nombre="Exhibidor de Joyas" data-precio="550">
+                        <img src="imagenes/exhibidor.jpeg">
+                        <h4>Exhibidor de Joyas</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 550</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Auriculare Funda" data-precio="430">
+                        <img src="imagenes/auriculares.jpeg">
+                        <h4>Auriculare Funda</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 430</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Adornos Decorativos" data-precio="80">
+                        <img src="imagenes/adornos.jpeg">
+                        <h4>Adornos Decorativos</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 80</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Abridor de Vino negro" data-precio="270">
+                        <img src="imagenes/abridordevino.jpg">
+                        <h4>Abridor de Vino</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 270</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="categoria-productos">
+                <h3 class="titulo-categoria"></h3>
+                <div class="productos-grid">
+                    <div class="producto" data-nombre="Dispensador de Agua" data-precio="300">
+                        <img src="imagenes/bombadeagua2.jpg">
+                        <h4>Dispensador de Agua</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 300</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Termo de Conejo verde" data-precio="300">
+                        <img src="imagenes/botellabebeconejo.jpg">
+                        <h4>Termo de Conejo verde</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 300</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Termo de Conejo rojo" data-precio="300">
+                        <img src="imagenes/c1.jpeg">
+                        <h4>Termo de Conejo rojo</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 300</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+
+                    <div class="producto" data-nombre="Termo de Conejo celeste" data-precio="300">
+                        <img src="imagenes/c2.jpeg">
+                        <h4>Termo de Conejo celeste</h4>
+                        <div class="precio-carrito">
+                            <span>C$ 300</span>
+                            <button class="agregar-carrito">🛒</button>
+                        </div>
+                    </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Carrito -->
+    <section class="carrito">
+        <h2>🛒 Tu carrito</h2>
+        <ul id="listaCarrito"></ul>
+        <p class="total-carrito">Total: C$ <span id="totalCarrito">0</span></p>
+        <button id="btnComprar" class="btn-whatsapp">🟢 Comprar por WhatsApp</button>
+        <button id="btnLimpiar" class="btn-limpiar">🗑️ Limpiar carrito</button>
+    </section>
+
+    <script src="script.js" defer></script>
+    <audio id="sonidoClick" src="sonidos/click.wav" preload="auto"></audio>
+</body>
