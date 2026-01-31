@@ -1645,3 +1645,95 @@ footer {
 #btnLimpiar:hover {
     background: #922d2d;
 }
+
+
+/* ================= NAV RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .menu a {
+        font-size: 17px;
+    }
+}
+
+/* MÓVIL */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 14px;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .menu a:hover {
+        background: rgba(0,0,0,0.05);
+    }
+}
+
+/*==HERO (para que no se vea gigante)==*/
+@media (max-width: 480px) {
+    .hero {
+        padding: 55px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+}
+
+/*==INFO CARDS (ya casi bien, solo pulir)==*/
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        max-width: 340px;
+    }
+}
+
+/*==SOCIAL FLOAT (que no moleste en móvil)==*/
+@media (max-width: 480px) {
+    .social-float {
+        right: 6px;
+        padding: 8px 6px;
+    }
+
+    .social-float a {
+        width: 34px;
+        height: 34px;
+    }
+}
