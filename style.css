@@ -1737,3 +1737,57 @@ footer {
         height: 34px;
     }
 }
+
+
+/* MODAL DE IMAGEN */
+.img-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.img-modal img {
+    max-width: 90%;
+    max-height: 85%;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    animation: zoomIn 0.3s ease;
+}
+
+/* BOTÓN CERRAR */
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ANIMACIÓN */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* EFECTO CLICK EN PRODUCTOS */
+.product-img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product-img:hover {
+    transform: scale(1.05);
+}

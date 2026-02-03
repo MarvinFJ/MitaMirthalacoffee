@@ -243,3 +243,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     observer.observe(videoTexto);
 });
+
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.querySelector(".close-modal");
+
+document.querySelectorAll(".product-img").forEach(img => {
+    img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+    });
+});
+
+// Cerrar con botón
+closeBtn.onclick = () => {
+    modal.style.display = "none";
+};
+
+// Cerrar al hacer click fuera
+modal.onclick = (e) => {
+    if (e.target === modal || e.target === modalImg) {
+        modal.style.display = "none";
+    }
+};
