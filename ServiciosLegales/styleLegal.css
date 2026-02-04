@@ -16,7 +16,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #f0f7f9;
+    background: #e1ebec05;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,11 +96,15 @@ body {
             rgba(0,0,0,0.55),
             rgba(0,0,0,0.55)
         ),
-        url("../imagenes/fondoLegal.jpg") center/cover no-repeat;
+        url("../imagenes/hogar.jpg") center/cover no-repeat;
 }
 
 .hero-text {
     max-width: 600px;
+}
+
+.hero-text a{
+    background-color: rgb(30, 165, 57);
 }
 
 .hero-text h1 {
@@ -148,7 +152,7 @@ body {
 }
 
 .card {
-    background: #1a1a1a;
+    background: #c8a96a;
     padding: 30px;
     width: 260px;
     border-radius: 12px;
@@ -167,33 +171,8 @@ body {
 }
 
 .about-img img {
-    max-width: 320px;
+    max-width: 700px;
     border-radius: 15px;
-}
-
-/* CTA */
-.cta {
-    background: #c8a96a;
-    color: #111;
-    text-align: center;
-    padding: 80px 20px;
-}
-
-/* WHATSAPP */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25d366;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
 }
 
 /* RESPONSIVE */
@@ -258,3 +237,129 @@ body {
         height: 40px;
     }
 }
+
+.legal-bar {
+  background-color: #0f0f12;
+  padding: 30px 0;
+}
+
+/* 🔑 CENTRADOR REAL */
+.legal-wrapper {
+  display: flex;
+  justify-content: center;   /* 👈 centra todo el bloque */
+}
+
+/* CONTENIDO CON ANCHO CONTROLADO */
+.legal-container {
+  width: 1100px;             /* 👈 ajusta aquí si quieres más o menos separación */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* BLOQUES */
+.legal-right,
+.legal-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.legal-left img {
+  width: 60px;
+}
+
+.legal-text h2 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.legal-text span {
+  color: #caa24d;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+/* DIVISOR */
+.legal-divider {
+  width: 1px;
+  height: 55px;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.legal-right p {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.legal-right i {
+  color: #caa24d;
+  font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(rgba(187, 149, 149, 0.45), rgba(0, 0, 0, 0.45));
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+
+  .legal-wrapper {
+    justify-content: center;
+  }
+
+  .legal-container {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .legal-divider {
+    display: none;
+  }
+
+  .legal-left,
+  .legal-right {
+    justify-content: center;
+  }
+
+  .legal-right {
+    order: 2;
+  }
+
+  .legal-left {
+    order: 1;
+  }
+
+  .legal-right p {
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  .legal-left img {
+    width: 52px;
+  }
+
+  .legal-text h2 {
+    font-size: 26px;
+  }
+
+  .legal-text span {
+    font-si
+
+
+
+
