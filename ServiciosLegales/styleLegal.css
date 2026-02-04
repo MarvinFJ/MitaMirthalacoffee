@@ -25,15 +25,20 @@ body {
 }
 
 .logo {
-    font-size: 22px;
+    display: flex;
+    align-items: center;
+    height: 49px;   /* altura real del navbar */
 }
 
-.logo img{
-    max-width: 45px;
-    border-radius: 5px;
+.logo img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
 }
 
 .logo span {
+    padding: 1rem;
     color: #c8a96a;
 }
 
@@ -63,7 +68,7 @@ body {
 
 /* BOTONES */
 .btn-gold {
-    background: #c8a96a;
+    background: linear-gradient(rgba(187, 149, 149, 0.45), rgba(0, 0, 0, 0.45));
     color: #111;
     padding: 10px 20px;
     border-radius: 25px;
@@ -91,7 +96,7 @@ body {
             rgba(0,0,0,0.55),
             rgba(0,0,0,0.55)
         ),
-        url("../imagenes/hogar.jpg") center/cover no-repeat;
+        url("../imagenes/fondoLegal.jpg") center/cover no-repeat;
 }
 
 .hero-text {
@@ -244,5 +249,12 @@ body {
 
     .legal-nav a {
         font-size: 18px;
+    }
+}
+
+/*Ajuste fino en móvil LOGO*/
+@media (max-width: 768px) {
+    .logo {
+        height: 40px;
     }
 }
