@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Georgia", serif;
+    background: #0f0f0f;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+.legal-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #f0f7f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+}
+
+.logo img{
+    max-width: 45px;
+    border-radius: 5px;
+}
+
+.logo span {
+    color: #c8a96a;
+}
+
+/* NAV BASE */
+.legal-nav {
+    display: flex;
+    align-items: center;
+}
+
+.legal-nav a {
+    color: #c8a96a;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.legal-nav a.btn-gold{
+     color: #f9f9f9;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #c8a96a;
+}
+
+
+/* BOTONES */
+.btn-gold {
+    background: #c8a96a;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-outline {
+    border: 2px solid #c8a96a;
+    color: #c8a96a;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 60px;
+
+    background: 
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.55)
+        ),
+        url("../imagenes/hogar.jpg") center/cover no-repeat;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    line-height: 1.1;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: #c8a96a;
+    margin: 15px 0 25px;
+}
+
+.hero-img img {
+    max-width: 380px;
+    border-radius: 15px;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 60px;
+    background: #151515;
+}
+
+.stats h3 {
+    font-size: 40px;
+    color: #c8a96a;
+    text-align: center;
+}
+
+/* SERVICES */
+.services {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 30px;
+    width: 260px;
+    border-radius: 12px;
+}
+
+.card span {
+    font-size: 40px;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 60px;
+}
+
+.about-img img {
+    max-width: 320px;
+    border-radius: 15px;
+}
+
+/* CTA */
+.cta {
+    background: #c8a96a;
+    color: #111;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero, .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 25px;
+        background-position: top center;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+}
+/*CSS – versión MÓVIL (la magia)*/
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .legal-nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background: #111;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 25px 0;
+
+        /* OCULTO POR DEFECTO */
+        display: none;
+    }
+
+    .legal-nav.active {
+        display: flex;
+    }
+
+    .legal-nav a {
+        font-size: 18px;
+    }
+}
