@@ -8,7 +8,7 @@ body {
     font-family: "Georgia", serif;
     background: #0f0f0f;
     color: #fff;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 
 /* HEADER */
@@ -358,8 +358,31 @@ footer {
   }
 
   .legal-text span {
-    font-si
+    font-size: 13px;
+    letter-spacing: 3px;
 
+}
 
+/* FIX overflow horizontal en móvil */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
+@media (max-width: 768px) {
+
+  .legal-header {
+    padding: 16px 20px; /* 👈 reduce padding en móvil */
+  }
+
+  .legal-nav {
+    left: 0;            /* 👈 evita que se salga */
+    right: 0;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    margin-left: auto;  /* 👈 lo empuja dentro del viewport */
+  }
+}
 
