@@ -8,7 +8,7 @@ body {
     font-family: "Georgia", serif;
     background: #0f0f0f;
     color: #fff;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 /* HEADER */
@@ -27,7 +27,8 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    height: 49px;   /* altura real del navbar */
+    height: 49px;
+    /* altura real del navbar */
 }
 
 .logo img {
@@ -54,8 +55,8 @@ body {
     text-decoration: none;
 }
 
-.legal-nav a.btn-gold{
-     color: #f9f9f9;
+.legal-nav a.btn-gold {
+    color: #f9f9f9;
 }
 
 .menu-toggle {
@@ -68,12 +69,17 @@ body {
 
 /* BOTONES */
 .btn-gold {
-    background: linear-gradient(rgba(187, 149, 149, 0.45), rgba(0, 0, 0, 0.45));
+    background: linear-gradient(135deg, #c8a96a, #121213);
     color: #111;
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
+}
+
+.hero-text a.btn-gold {
+    background: linear-gradient(135deg, #16923bd5, #0f460ed8);
+
 }
 
 .btn-outline {
@@ -91,11 +97,9 @@ body {
     align-items: center;
     padding: 120px 60px;
 
-    background: 
-        linear-gradient(
-            rgba(0,0,0,0.55),
-            rgba(0,0,0,0.55)
-        ),
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)),
         url("../imagenes/hogar.jpg") center/cover no-repeat;
 }
 
@@ -103,7 +107,7 @@ body {
     max-width: 600px;
 }
 
-.hero-text a{
+.hero-text a {
     background-color: rgb(30, 165, 57);
 }
 
@@ -177,7 +181,9 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-    .hero, .about {
+
+    .hero,
+    .about {
         flex-direction: column;
         text-align: center;
     }
@@ -199,6 +205,7 @@ body {
         font-size: 42px;
     }
 }
+
 /*CSS – versión MÓVIL (la magia)*/
 
 @media (max-width: 768px) {
@@ -239,70 +246,72 @@ body {
 }
 
 .legal-bar {
-  background-color: #0f0f12;
-  padding: 30px 0;
+    background-color: #0f0f12;
+    padding: 30px 0;
 }
 
 /* 🔑 CENTRADOR REAL */
 .legal-wrapper {
-  display: flex;
-  justify-content: center;   /* 👈 centra todo el bloque */
+    display: flex;
+    justify-content: center;
+    /* 👈 centra todo el bloque */
 }
 
 /* CONTENIDO CON ANCHO CONTROLADO */
 .legal-container {
-  width: 1100px;             /* 👈 ajusta aquí si quieres más o menos separación */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    width: 1100px;
+    /* 👈 ajusta aquí si quieres más o menos separación */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 /* BLOQUES */
 .legal-right,
 .legal-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .legal-left img {
-  width: 60px;
+    width: 60px;
 }
 
 .legal-text h2 {
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  line-height: 1;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1;
 }
 
 .legal-text span {
-  color: #caa24d;
-  font-size: 14px;
-  letter-spacing: 4px;
+    color: #caa24d;
+    font-size: 14px;
+    letter-spacing: 4px;
 }
 
 /* DIVISOR */
 .legal-divider {
-  width: 1px;
-  height: 55px;
-  background-color: rgba(255,255,255,0.3);
+    width: 1px;
+    height: 55px;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .legal-right p {
-  color: #ffffff;
-  font-size: 16px;
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .legal-right i {
-  color: #caa24d;
-  font-size: 18px;
+    color: #caa24d;
+    font-size: 18px;
 }
 
 /* FOOTER */
@@ -315,74 +324,112 @@ footer {
 
 @media (max-width: 768px) {
 
-  .legal-wrapper {
-    justify-content: center;
-  }
+    .legal-wrapper {
+        justify-content: center;
+    }
 
-  .legal-container {
-    width: 100%;
-    max-width: 100%;
-    flex-direction: column;
-    gap: 18px;
-    text-align: center;
-  }
+    .legal-container {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+    }
 
-  .legal-divider {
-    display: none;
-  }
+    .legal-divider {
+        display: none;
+    }
 
-  .legal-left,
-  .legal-right {
-    justify-content: center;
-  }
+    .legal-left,
+    .legal-right {
+        justify-content: center;
+    }
 
-  .legal-right {
-    order: 2;
-  }
+    .legal-right {
+        order: 2;
+    }
 
-  .legal-left {
-    order: 1;
-  }
+    .legal-left {
+        order: 1;
+    }
 
-  .legal-right p {
-    justify-content: center;
-    font-size: 15px;
-  }
+    .legal-right p {
+        justify-content: center;
+        font-size: 15px;
+    }
 
-  .legal-left img {
-    width: 52px;
-  }
+    .legal-left img {
+        width: 52px;
+    }
 
-  .legal-text h2 {
-    font-size: 26px;
-  }
+    .legal-text h2 {
+        font-size: 26px;
+    }
 
-  .legal-text span {
-    font-size: 13px;
-    letter-spacing: 3px;
+    .legal-text span {
+        font-size: 13px;
+        letter-spacing: 3px;
 
+    }
 }
 
 /* FIX overflow horizontal en móvil */
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
 
-  .legal-header {
-    padding: 16px 20px; /* 👈 reduce padding en móvil */
-  }
+    .legal-header {
+        padding: 16px 20px;
+        /* 👈 reduce padding en móvil */
+    }
 
-  .legal-nav {
-    left: 0;            /* 👈 evita que se salga */
-    right: 0;
-    width: 100%;
-  }
+    .legal-nav {
+        left: 0;
+        /* 👈 evita que se salga */
+        right: 0;
+        width: 100%;
+    }
 
-  .menu-toggle {
-    margin-left: auto;  /* 👈 lo empuja dentro del viewport */
-  }
+    .menu-toggle {
+        margin-left: auto;
+        /* 👈 lo empuja dentro del viewport */
+    }
 }
 
+/* ANIMACIÓN DE CARDS */
+.card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estado inicial */
+.about-text {
+    opacity: 0;
+    transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+}
+
+/* Desktop: entra desde la derecha */
+.about-text.from-right {
+    transform: translateX(80px);
+}
+
+/* Mobile: entra desde abajo */
+.about-text.from-bottom {
+    transform: translateY(60px);
+}
+
+/* Estado final */
+.about-text.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}

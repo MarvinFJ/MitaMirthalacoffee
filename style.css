@@ -714,7 +714,7 @@ footer {
 
 /* BOTÓN PLANES FUTURO */
 .btn-futuro {
-    background: linear-gradient(135deg, #c8a96a, #121213);
+    background: linear-gradient(rgba(187, 149, 149, 0.45), rgba(0, 0, 0, 0.45));
     padding: 8px 15px;
     border-radius: 8px;
     color: white;
