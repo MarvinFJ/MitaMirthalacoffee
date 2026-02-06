@@ -79,8 +79,56 @@ body {
 
 .hero-text a.btn-gold {
     background: linear-gradient(135deg, #16923bd5, #0f460ed8);
+    color: #ffffff;
+    padding: 12px 26px;
+    border-radius: 30px;
+    display: inline-block;
 
+    /* estado normal */
+    transform: translateY(0);
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
 }
+
+.hero-text a.btn-gold:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(22, 146, 59, 0.45);
+    background: linear-gradient(135deg, #1fcf5f, #0f7a34);
+}
+
+.hero-text a.btn-gold:hover {
+    animation: pulseWhats 1.2s ease infinite;
+}
+
+@keyframes pulseWhats {
+    0% { box-shadow: 0 0 0 0 rgba(31, 207, 95, 0.6); }
+    70% { box-shadow: 0 0 0 14px rgba(31, 207, 95, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(31, 207, 95, 0); }
+}
+
+@media (hover: hover) {
+    .hero-text a.btn-gold:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 25px rgba(22, 146, 59, 0.45);
+        background: linear-gradient(135deg, #1fcf5f, #0f7a34);
+    }
+}
+
+.hero-text a.btn-gold:active {
+    transform: scale(0.96);
+    box-shadow: 0 6px 15px rgba(22, 146, 59, 0.4);
+    background: linear-gradient(135deg, #1fcf5f, #0f7a34);
+}
+
+.hero-text a.btn-gold:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(31, 207, 95, 0.6);
+}
+
+
+
 
 .btn-outline {
     border: 2px solid #c8a96a;
@@ -235,7 +283,15 @@ body {
 
     .legal-nav a {
         font-size: 18px;
+        transition: transform 0.25s ease, color 0.25s ease; /*Efecto “elevado” suave (más moderno)*/
     }
+}
+
+/*Efecto “elevado” suave (más moderno)*/
+
+.legal-nav a:hover {
+    transform: translateY(-2px);
+    color: #ffffff;
 }
 
 /*Ajuste fino en móvil LOGO*/

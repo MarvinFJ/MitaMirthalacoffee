@@ -16,9 +16,6 @@ menuToggle.addEventListener("click", () => {
 
 });
 
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
 
   const counters = document.querySelectorAll(".stats h3");

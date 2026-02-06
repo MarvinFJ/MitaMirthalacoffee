@@ -14,6 +14,7 @@ if (slide) {
     setInterval(nextSlide, 3000);
 }
 
+
 // ================= CARRITO + BUSCADOR + LIGHTBOX =================
 document.addEventListener("DOMContentLoaded", () => {
 
