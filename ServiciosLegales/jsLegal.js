@@ -5,9 +5,19 @@ const menuToggle = document.getElementById("menuToggle");
 const legalNav = document.getElementById("legalNav");
 
 menuToggle.addEventListener("click", () => {
-    legalNav.classList.toggle("active");
+  legalNav.classList.toggle("active");
+
+  // 🔥 CERRAR MENÚ AL HACER CLICK EN UN LINK (MÓVIL)
+  document.querySelectorAll(".legal-nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      document.querySelector(".legal-nav").classList.remove("active");
+    });
+  });
+
 });
- 
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -89,31 +99,31 @@ document.addEventListener("DOMContentLoaded", () => {
 /* detecta scroll + tamaño de pantalla SECCION SOBRE MI*/
 
 document.addEventListener("DOMContentLoaded", () => {
-    const aboutText = document.querySelector(".about-text");
+  const aboutText = document.querySelector(".about-text");
 
-    // Detectar si es móvil
-    const isMobile = window.innerWidth <= 768;
+  // Detectar si es móvil
+  const isMobile = window.innerWidth <= 768;
 
-    // Aplicar animación inicial según dispositivo
-    if (isMobile) {
-        aboutText.classList.add("from-bottom");
-    } else {
-        aboutText.classList.add("from-right");
-    }
+  // Aplicar animación inicial según dispositivo
+  if (isMobile) {
+    aboutText.classList.add("from-bottom");
+  } else {
+    aboutText.classList.add("from-right");
+  }
 
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    aboutText.classList.add("show");
-                    observer.unobserve(aboutText); // solo una vez
-                }
-            });
-        },
-        {
-            threshold: 0.3
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          aboutText.classList.add("show");
+          observer.unobserve(aboutText); // solo una vez
         }
-    );
+      });
+    },
+    {
+      threshold: 0.3
+    }
+  );
 
-    observer.observe(aboutText);
+  observer.observe(aboutText);
 });
