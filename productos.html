@@ -31,14 +31,21 @@
     </nav>
 
     <!-- CONTENEDOR PRINCIPAL PRODUCTOS -->
-    <div class="productos-contenedor">
+    <div class="productos-contenedor" id="compras">
 
         <!-- PANEL IZQUIERDO -->
         <aside class="panel-lateral">
-            <div class="buscador-compras">
-                <input type="text" id="buscador" placeholder="🔍 Buscar producto...">
-                <button id="verCompras">Ver Compras 🛒</button>
-            </div>
+            <input type="text" id="buscador" placeholder="🔍 Buscar producto...">
+            <button id="verCompras">Ver Compras 🛒</button>
+
+            <!-- Carrito -->
+            <section class="carrito">
+                <h2>🛒 Tu carrito</h2>
+                <ul id="listaCarrito"></ul>
+                <p class="total-carrito">Total: C$ <span id="totalCarrito">0</span></p>
+                <button id="btnComprar" class="btn-whatsapp">🟢 Comprar por WhatsApp</button>
+                <button id="btnLimpiar" class="btn-limpiar">🗑️ Limpiar carrito</button>
+            </section>
         </aside>
 
         <!-- SECCIÓN PRODUCTOS -->
@@ -534,14 +541,9 @@
         </main>
     </div>
 
-    <!-- Carrito -->
-    <section class="carrito">
-        <h2>🛒 Tu carrito</h2>
-        <ul id="listaCarrito"></ul>
-        <p class="total-carrito">Total: C$ <span id="totalCarrito">0</span></p>
-        <button id="btnComprar" class="btn-whatsapp">🟢 Comprar por WhatsApp</button>
-        <button id="btnLimpiar" class="btn-limpiar">🗑️ Limpiar carrito</button>
-    </section>
+    <a href="#compras" class="btn-flotante-compras">
+        🛒 Ver Compras
+    </a>
 
     <script src="script.js" defer></script>
     <audio id="sonidoClick" src="sonidos/click.wav" preload="auto"></audio>

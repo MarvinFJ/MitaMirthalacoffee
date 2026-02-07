@@ -387,9 +387,7 @@ footer {
     background: #fefefe;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    position: sticky;/* esto lo hace fijo al scroll */
-    top: 20px;/* separación desde arriba */
-    margin: 20px auto;
+    margin: 20px;
 }
 
 .carrito ul {
@@ -814,19 +812,19 @@ footer {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
+    align-items: flex-start;
 }
 
 /* PANEL IZQUIERDO */
 .panel-lateral {
     position: sticky;
-    top: 90px;
-    /* debajo del navbar */
+    top: 100px; /* debajo del navbar */
     flex: 0 0 250px;
+    align-self: flex-start;
     background: #fff;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    height: fit-content;
 }
 
 
@@ -1794,4 +1792,52 @@ footer {
 
 .product-img:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+    .panel-lateral {
+        position: static;
+    }
+
+    .carrito {
+        max-width: 100%;
+        margin-top: 15px;
+    }
+
+}
+
+/*CSS del botón (bonito y pro) VER COMPRAS*/
+.btn-flotante-compras {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+    color: #fff;
+    padding: 14px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(13,110,253,0.35);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-flotante-compras:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 26px rgba(13,110,253,0.45);
+}
+
+/*CSS del botón (bonito y pro) VER COMPRAS*/
+@media (max-width: 768px) {
+    .btn-flotante-compras {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px 18px;
+        font-size: 14px;
+    }
 }
