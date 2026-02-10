@@ -1,3 +1,4 @@
+
 // ================= CAROUSEL =================
 const slide = document.querySelector(".carousel-slide");
 if (slide) {
@@ -27,6 +28,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const buscadorInput = document.getElementById("buscador");
     const verComprasBtn = document.getElementById("verCompras");
 
+     /* ================= MENÚ MÓVIL ================= */
+    const menuBtn = document.querySelector(".menu-btn");
+    const menu = document.querySelector(".menu");
+
+    if (menuBtn && menu) {
+        menuBtn.addEventListener("click", () => {
+            menu.classList.toggle("menu-activo");
+        });
+    }
+
     if (!listaCarrito || !totalCarrito || !btnComprar) return;
 
     // ================= CARRO OPTIMIZADO =================
@@ -36,14 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function guardarCarrito() {
         localStorage.setItem("carrito", JSON.stringify(carrito));
     }
-
-    // NAV MÓVIL SIN HAMBURGUESA
-    const btn = document.querySelector(".menu-btn");
-    const menu = document.querySelector(".menu");
-
-    btn.addEventListener("click", () => {
-        menu.classList.toggle("menu-activo");
-    });
 
     // Renderiza carrito en pantalla
     function renderCarrito() {
