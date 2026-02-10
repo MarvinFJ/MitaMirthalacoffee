@@ -1679,13 +1679,6 @@ footer {
         padding: 12px;
     }
 
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        gap: 14px;
-    }
-
     .menu li {
         width: 100%;
         text-align: center;
@@ -1845,4 +1838,107 @@ footer {
 /*Asegura que TODO el SVG sea clickeable*/
 .whatsapp svg {
     pointer-events: none;
+}
+
+
+/* =========================
+   NAV BASE (DESKTOP NO CAMBIA)
+========================= */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* =========================
+   MODO MÓVIL
+========================= */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 10px 14px;
+        height: auto;
+    }
+
+    .navbar .logo {
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* OCULTAMOS EL MENÚ POR DEFECTO */
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 90%;
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        padding: 20px 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        opacity: 0;
+        pointer-events: none;
+        transform: translate(-50%, -10px);
+        transition: all 0.35s ease;
+        z-index: 1000;
+    }
+
+    /* MENÚ VISIBLE */
+    .menu.menu-activo {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(-50%, 0);
+    }
+
+    .menu li {
+        text-align: center;
+    }
+
+    .menu a {
+        font-size: 1.1rem;
+        padding: 10px 0;
+    }
+
+    .btn-futuro {
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/* BOTÓN MENÚ (solo móvil) */
+.menu-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+        margin: 10px auto 0;
+        padding: 8px 20px;
+        border-radius: 20px;
+        border: none;
+        background: linear-gradient(135deg, #c8a96a, #a88945);
+        color: #111;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .menu-btn:active {
+        transform: scale(0.95);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

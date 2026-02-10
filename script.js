@@ -37,6 +37,14 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("carrito", JSON.stringify(carrito));
     }
 
+    // NAV MÓVIL SIN HAMBURGUESA
+    const btn = document.querySelector(".menu-btn");
+    const menu = document.querySelector(".menu");
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("menu-activo");
+    });
+
     // Renderiza carrito en pantalla
     function renderCarrito() {
         listaCarrito.innerHTML = "";
@@ -267,3 +275,5 @@ modal.onclick = (e) => {
         modal.style.display = "none";
     }
 };
+
+
