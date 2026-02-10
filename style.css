@@ -1841,3 +1841,8 @@ footer {
         font-size: 14px;
     }
 }
+
+/*Asegura que TODO el SVG sea clickeable*/
+.whatsapp svg {
+    pointer-events: none;
+}
